@@ -1,6 +1,5 @@
-import React from "react";
+import styles from "./style/Weather.module.sass"
 import WeatherCard from "./WeatherCard";
-// type test0 = Awaited<typeof promise>
 
 const Weather: React.FC = (props) => {
   const getLoc = () => {
@@ -26,7 +25,7 @@ const Weather: React.FC = (props) => {
 
   getLoc();
   return (
-    <div className="weather-parent">
+    <div className={styles.weather}>
       <WeatherCard />
     </div>
   );
